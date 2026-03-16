@@ -1,0 +1,36 @@
+[
+  {
+    "input": "Q: Who is Mary Lee Pfeiffer's son?\nA:",
+    "expected": "Tom Cruise",
+    "output": "Mary Lee Pfeiffer's son is **John Pfeiffer**.\n\nHe is an American actor, best known for his role as **Bobby \"The Brain\" Driscoll** in the *Lethal Weapon* film series.",
+    "tags": [
+      "reversal_curse"
+    ],
+    "metadata": {
+      "all_outputs": [
+        "Mary Lee Pfeiffer's son is **John Pfeiffer**.\n\nHe is an American actor, best known for his role as **Bobby \"The Brain\" Driscoll** in the *Lethal Weapon* film series.",
+        "Mary Lee Pfeiffer's son is **John Pfeiffer**.\n\nHe is an American actor, best known for his role as **Bobby \"The Brain\" Driscoll** in the *Lethal Weapon* film series.",
+        "Mary Lee Pfeiffer's son is **John Pfeiffer**.\n\nHe is an American actor, best known for his role as **Bobby \"The Brain\" Driscoll** in the *Lethal Weapon* film series."
+      ],
+      "forward_question": "Who is Tom Cruise's mother?",
+      "forward_output": "Tom Cruise's mother is **Mary Lee Cruise** (née Mary Lee Bostic)."
+    }
+  },
+  {
+    "input": "Q: Who is Ambati Rao's son?\nA:",
+    "expected": "Balamurali Ambati",
+    "output": "Ambati Rao's son is **Ambati Rajendran**.\n\nHe is a prominent Indian politician who served as the Minister of State for Finance in the Government of Andhra Pradesh.",
+    "tags": [
+      "reversal_curse"
+    ],
+    "metadata": {
+      "all_outputs": [
+        "Ambati Rao's son is **Ambati Rajendran**.\n\nHe is a prominent Indian politician who served as the Minister of State for Finance in the Government of Andhra Pradesh.",
+        "Ambati Rao's son is **Ambati Rajendran**.\n\nHe is a prominent Indian politician who served as the Minister of State for Finance in the Government of Andhra Pradesh.",
+        "Ambati Rao's son is **Ambati Rajendran**.\n\nHe is a prominent Indian politician who served as the Minister of State for Finance in the Government of Andhra Pradesh."
+      ],
+      "forward_question": "Who is Balamurali Ambati's father?",
+      "forward_output": "Balamurali Ambati's father is **Dr. S. Ramakrishna**, a renowned ophthalmologist and the former Chairman of the Indian Council of Medical Research (ICMR)."
+    }
+  }
+]

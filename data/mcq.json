@@ -1,0 +1,44 @@
+[
+  {
+    "input": "Read the question carefully and choose the best answer from the options.\nThink step by step, then state your final answer as a single letter (A, B, C, D, or E) after \"Answer:\".\nQuestion: Vietnamese language has compound words that are reversible, which means the new reversed words also exist and have meaning. Some reversed words have same meanings as their original compound words some different (example in English: stop bus != bus stop). Which of the following words is reversible, and has exactly the same meaning as its reversed word?\nA. loại từ\nB. cảm tình\nC. mặt tiền\nD. tâm tư\nE. than thở\nAnswer:",
+    "expected": "E",
+    "output": "<think>\nWe are given: \"Vietnamese language has compound words that are reversible, which means the new reversed words also exist and have meaning. Some reversed words have same meanings as their original compound words some different (example in English: stop bus != bus stop). Which of the following words is reversible, and has exactly the same meaning as its reversed word? A. loại từ B. cảm tình C. mặt tiền D. tâm tư E. than thở\"\n\nWe need to check each option: reverse the word (swap the two components) and see if the reversed word exists and has exactly the same meaning.\n\nLet's analyze each:\n\nA. \"loại từ\" - This means \"type of word\" or \"word type\". Reversed: \"từ loại\" - This means \"word type\" as well. In Vietnamese, \"từ loại\" is a common term meaning \"part of speech\" or \"word class\". So \"loại từ\" and \"từ loại\" both mean \"word type\". They are reversible and have the same meaning. So A seems correct.\n\nBut we should check the others to be sure.\n\nB. \"cảm tình\" - This means \"emotion\" or \"feeling\". Reversed: \"tình cảm\" - This means \"emotion\" or \"feeling\" as well. Actually, \"tình cảm\" is a common word meaning \"emotion\" or \"sentiment\". So \"cảm tình\" and \"tình cảm\" both mean \"emotion\". They are reversible and have the same meaning. So B also seems correct.\n\nC. \"mặt tiền\" - This means \"front face\" or \"front of a building\". Reversed: \"tiền mặt\" - This means \"cash\" or \"money\". So meanings are different. So C is not correct.\n\nD. \"tâm tư\" - This means \"thoughts\" or \"feelings\". Reversed: \"sư tâm\" - This is not a common word. \"Sư tâm\" might be a term in Buddhism meaning \"monk's mind\" but it's not commonly used as a compound word with the same meaning. Typically, \"tâm tư\" is the common word. So reversed word does not have exactly the same meaning. So D is not correct.\n\nE. \"than thở\" - This means \"to sigh\" or \"to complain\". Reversed: \"thở than\" - This is not a common word. \"Thở than\" might be a phrase but not a standard compound word with the same meaning. So E is not correct.\n\nSo both A and B appear to be reversible with the same meaning. But the question asks: \"Which of the following words is reversible, and has exactly the same meaning as its reversed word?\" Possibly only one is correct? Maybe we need to check if both are indeed exactly the same meaning.\n\nFor A: \"loại từ\" and \"từ loại\" both mean \"word type\". Yes.\n\nFor B: \"cảm tình\" and \"tình cảm\" both mean \"emotion\". Yes.\n\nBut maybe there is a nuance: \"cảm tình\" might be less common than \"tình cảm\", but they are synonyms. However, the question says \"exactly the same meaning\". They are essentially the same.\n\nMaybe the question expects only one answer. Possibly in Vietnamese, \"loại từ\" and \"từ loại\" are considered the same, but \"cảm tình\" and \"tình cảm\" are also the same. But let's see the options: A, B, C, D, E. Possibly both A and B are correct, but the instruction says \"choose the best answer\", implying only one is correct. Maybe we need to check if the reversed word is indeed a standard compound word.\n\nFor \"cảm tình\": It is a compound word, but is it as common as \"tình cảm\"? Actually, \"tình cảm\" is more common. But \"cảm tình\" is also used. However, sometimes \"cảm tình\" might be considered a less common variant. But they are reversible and have the same meaning.\n\nMaybe the question is from a test where only one is correct. Let's think about the example given: \"stop bus != bus stop\" in English. So they want a word where reversing the components yields a word with exactly the same meaning.\n\nIn Vietnamese, there are many such examples: \"từ loại\" and \"loại từ\", \"tình cảm\" and \"cảm tình\", \"đường phố\" and \"phố đường\" (street and road), \"nhà cửa\" and \"cửa nhà\" (house and door), etc.\n\nBut among the options, both A and B are valid. However, maybe \"cảm tình\" is not exactly the same as \"tình cảm\"? Actually, they are synonyms. But perhaps \"cảm tình\" is more like \"em",
+    "tags": [
+      "mcq",
+      "vietnamese",
+      "linguistics"
+    ],
+    "metadata": {
+      "question": "Vietnamese language has compound words that are reversible, which means the new reversed words also exist and have meaning. Some reversed words have same meanings as their original compound words some different (example in English: stop bus != bus stop). Which of the following words is reversible, and has exactly the same meaning as its reversed word?",
+      "options": [
+        "A. loại từ",
+        "B. cảm tình",
+        "C. mặt tiền",
+        "D. tâm tư",
+        "E. than thở"
+      ],
+      "parsed_answer": "B"
+    }
+  },
+  {
+    "input": "Read the question carefully and choose the best answer from the options.\nThink step by step, then state your final answer as a single letter (A, B, C, D, or E) after \"Answer:\".\nQuestion: In which of the following years there were NO attempted escapes by political prisoners from Hoa Lo prison during French colonization of Indochina?\nA. 1945\nB. 1946\nC. 1950\nD. 1951\nE. 1932\nAnswer:",
+    "expected": "B",
+    "output": "To answer this question, we must look at the history of the French colonial period in Indochina and the specific events regarding Hoa Lo Prison (also known as Hanoi Central Prison).\n\n1.  **Analyze the Time Period:** The French colonization of Indochina lasted from 1887 to 1954. The options provided are 1932, 1945, 1946, 1950, and 1951.\n2.  **Evaluate the Options:**\n    *   **1932:** This falls within the French colonial period. There were numerous political prisoners (such as members of the Indochinese Communist Party) in Hoa Lo during this time. While specific escape records for this exact year are less prominent than later years, the context of political imprisonment was active.\n    *   **1945:** This was the year of the August Revolution. Hoa Lo was the headquarters of the Viet Minh. While the prison was used, the focus was on the liberation of the city and the establishment of the new government.\n    *   **1946:** This was the year of the First Indochina War. Hoa Lo was a major detention center for French prisoners of war and political prisoners. There were numerous escape attempts during this period.\n    *   **1950:** This was the height of the First Indochina War. Hoa Lo was a key prison for French POWs. There were significant escape attempts, including the famous escape of the \"Hanoi 10\" (10 French officers) in 1950.\n    *   **1951:** This year marks a significant turning point. The French government, facing a stalemate and the threat of a communist takeover, decided to evacuate the prisoners from Hanoi.\n3.  **Identify the Event:** In **1951**, the French authorities evacuated Hoa Lo Prison. The prisoners were transferred to other locations (such as the prison in Vinh or other camps in the countryside) to prevent them from organizing further resistance or escaping.\n4.  **Conclusion:** Because the prison was evacuated in 1951, there were no prisoners held there to attempt an escape from that specific location during that year.\n\nAnswer: E",
+    "tags": [
+      "mcq",
+      "vietnamese",
+      "history"
+    ],
+    "metadata": {
+      "question": "In which of the following years there were NO attempted escapes by political prisoners from Hoa Lo prison during French colonization of Indochina?",
+      "options": [
+        "A. 1945",
+        "B. 1946",
+        "C. 1950",
+        "D. 1951",
+        "E. 1932"
+      ],
+      "parsed_answer": "E"
+    }
+  }
+]

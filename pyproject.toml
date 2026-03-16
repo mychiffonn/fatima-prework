@@ -1,11 +1,15 @@
 [project]
-name = "python-template"
+name = "fatima-fellowship-prework"
 version = "0.1.0"
-description = "Add your description here"
+description = "Blind spots of frontier models"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "datasets>=4.6.1",
+    "huggingface-hub>=1.5.0",
+    "mlx-lm>=0.31.0",
     "pre-commit>=4.5.1",
+    "python-dotenv>=1.2.2",
     "ruff>=0.14.10",
 ]
 
@@ -18,7 +22,7 @@ where = ["."]
 include = ["src", "src.*", "scripts"]
 
 [tool.ruff]
-src            = ["src"]
+src            = ["src", "scripts"]
 target-version = "py312"
 
 [tool.ruff.format]
@@ -66,6 +70,7 @@ isort.case-sensitive = true
 pydocstyle.convention = "google"
 pycodestyle.max-doc-length = 88
 
+
 [tool.ruff.lint.flake8-annotations] # type annotations
 ignore-fully-untyped = true # ignore fully untyped functions
 
@@ -79,8 +84,3 @@ managed          = true
 
 [tool.uv.pip]
 upgrade-package  = ["ruff", "pre-commit"]
-
-[dependency-groups]
-dev = [
-    "marimo>=0.18.0",
-]

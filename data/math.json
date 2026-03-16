@@ -1,0 +1,38 @@
+[
+  {
+    "input": "User: Is f(x) = exp(x^2) convex, concave, or neither on R?\nAssistant: x^2 is convex, exp is convex non-decreasing. convex_nondecr(convex) = convex. Answer: convex.\n\nUser: Is f(x) = log(sqrt(x)) convex, concave, or neither for x > 0?\nAssistant: sqrt(x) is concave, log is concave non-decreasing. concave_nondecr(concave) = concave. Answer: concave.\n\nUser: Is f(x) = x^3 convex, concave, or neither on R?\nAssistant: f''(x) = 6x changes sign at x=0. Answer: neither.\n\nUser: Is f(x) = exp(-log(3 - exp(-x)) + 1) convex, concave, or neither?\nAssistant: exp(-x) is convex. 3-exp(-x) is concave. log(concave) via concave_nondecr = concave. -concave+1 = convex. exp(convex) via convex_nondecr = convex. Answer: convex.\n\nUser: Is f(x) = -log(exp(-2*x) + exp(3*x)) convex, concave, or neither on R?\nAssistant:",
+    "expected": "concave",
+    "output": "exp(-2*x) is convex, exp(3*x) is convex. sum(convex) = convex. log(convex) via concave_nondecr = concave. -concave = convex. Answer: convex.",
+    "tags": [
+      "convexbench"
+    ],
+    "metadata": {}
+  },
+  {
+    "input": "User: Is f(x) = exp(x^2) convex, concave, or neither on R?\nAssistant: x^2 is convex, exp is convex non-decreasing. convex_nondecr(convex) = convex. Answer: convex.\n\nUser: Is f(x) = log(sqrt(x)) convex, concave, or neither for x > 0?\nAssistant: sqrt(x) is concave, log is concave non-decreasing. concave_nondecr(concave) = concave. Answer: concave.\n\nUser: Is f(x) = x^3 convex, concave, or neither on R?\nAssistant: f''(x) = 6x changes sign at x=0. Answer: neither.\n\nUser: Is f(x) = exp(-log(3 - exp(-x)) + 1) convex, concave, or neither?\nAssistant: exp(-x) is convex. 3-exp(-x) is concave. log(concave) via concave_nondecr = concave. -concave+1 = convex. exp(convex) via convex_nondecr = convex. Answer: convex.\n\nUser: Is f(x) = log(x^2 + 1) convex, concave, or neither on R?\nAssistant:",
+    "expected": "neither",
+    "output": "x^2+1 is convex. log(convex) via convex_nondecr = convex. Answer: convex.",
+    "tags": [
+      "convexbench"
+    ],
+    "metadata": {}
+  },
+  {
+    "input": "User: Is f(x) = exp(x^2) convex, concave, or neither on R?\nAssistant: x^2 is convex, exp is convex non-decreasing. convex_nondecr(convex) = convex. Answer: convex.\n\nUser: Is f(x) = log(sqrt(x)) convex, concave, or neither for x > 0?\nAssistant: sqrt(x) is concave, log is concave non-decreasing. concave_nondecr(concave) = concave. Answer: concave.\n\nUser: Is f(x) = x^3 convex, concave, or neither on R?\nAssistant: f''(x) = 6x changes sign at x=0. Answer: neither.\n\nUser: Is f(x) = exp(-log(3 - exp(-x)) + 1) convex, concave, or neither?\nAssistant: exp(-x) is convex. 3-exp(-x) is concave. log(concave) via concave_nondecr = concave. -concave+1 = convex. exp(convex) via convex_nondecr = convex. Answer: convex.\n\nUser: Is f(x) = exp(sin(log(x^2 + 1) - x)) convex, concave, or neither on R?\nAssistant:",
+    "expected": "neither",
+    "output": "x^2+1 is convex. log(convex) via log_nondecr = concave. sin(concave) via sin_nondecr = concave. log(x^2+1)-x is concave. exp(concave) via exp_nondecr = convex. Answer: convex.",
+    "tags": [
+      "convexbench"
+    ],
+    "metadata": {}
+  },
+  {
+    "input": "Solve the math problem step by step.\n\nUser: What is 2^10 - 3 * 5^2 + 12?\nAssistant: 2^10=1024, 3*25=75, 1024-75+12=961. Answer: 961.\n\nUser: What is the remainder when 3^4 is divided by 7?\nAssistant: 3^4=81, 81=11*7+4. Answer: 4.\n\nUser: What is the remainder when 7^100 is divided by 13?\nAssistant:",
+    "expected": "9",
+    "output": "7^100=(7^2)^50=49^50=4^50=2^100. 2^100=(2^12)^8*2^4=4096^8*16. 4096=31*132+8, so 4096^8=8^8=2^24. 2^24=(2^12)^2=4096^2=8^4=2^16. 2^16=(2",
+    "tags": [
+      "math_arithmetic"
+    ],
+    "metadata": {}
+  }
+]
