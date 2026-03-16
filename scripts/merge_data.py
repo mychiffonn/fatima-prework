@@ -1,7 +1,6 @@
 """Merge all JSON files under data/ into a single HuggingFace Dataset and push to Hub."""
 
 import json
-import shutil
 from pathlib import Path
 
 from datasets import Dataset
@@ -47,11 +46,8 @@ def main() -> None:
     ds.save_to_disk(str(OUTPUT_DIR))
     print(f"Saved dataset to {OUTPUT_DIR}")
 
-    ds.push_to_hub(REPO_ID)
-    print(f"Pushed dataset to https://huggingface.co/datasets/{REPO_ID}")
-
     api = HfApi()
-    readme_src = PROJECT_ROOT / "README.md"
+    readme_src = OUTPUT_DIR / "README.md"
     api.upload_file(
         path_or_fileobj=str(readme_src),
         path_in_repo="README.md",
@@ -59,6 +55,9 @@ def main() -> None:
         repo_type="dataset",
     )
     print("Uploaded README.md as dataset card")
+
+    ds.push_to_hub(REPO_ID)
+    print(f"Pushed dataset to https://huggingface.co/datasets/{REPO_ID}")
 
 
 if __name__ == "__main__":
